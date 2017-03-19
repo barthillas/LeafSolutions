@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+        <title>@ViewBag.Title</title>
+ 
+        <meta name="description" content="@ViewBag.Description" />
+        <meta name="keywords" content="@ViewBag.Keywords" />
+        <meta name="robots" content="all" />
+        <meta name="revisit-after" content="1 week" />
+
+        <link href="~/Content/css/Style.css" rel="stylesheet" />
+    </head>
+ 
+    <body>
+        <section id="container"> 
+            
+            <header>
+
+                 
+                <div id="logo"></div>
+               
+                <div id="social-media"></div>
+                <div class="social facebook"></div>
+                  <div class="social twitter"></div>
+                  <div class="social youtube"></div>
+                  <div class="social share"></div>
+                  <div class="social rss"></div>
+
+                <div id="search">
+                   <div id="search-area">
+                       <input type="text" class="search-text"name="search"/>
+                   </div>
+                    <div id="search-button">
+                        <input type="submit" class="search-button" value="Ara" />
+                               </div>
+                </div>
+                
+            </header>
+            @RenderBody()
+        </section>
+       
+    </body>                
+</html>

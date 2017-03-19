@@ -1,0 +1,143 @@
+﻿@import url(normalize.css);
+
+body {
+    font-family: 'Open sans', sans-serif; /*font tipi*/
+    font-size: 14px; /* font büyüklüğü*/
+    background: url(/Content/img/background.png); /* arkaplan resmi*/
+    overflow-y: scroll; /*kaydırma çubuğu her zaman görünür olsun*/
+    cursor: default; /*fare imleci her zaman varsayılan şekilde görünsün*/
+    color: #1c3564; /*metin rengi*/
+}
+
+a {
+    text-decoration: none; /*bağlantıların altı çizili olmasın*/
+    color: white; /*bağlantılar beyaz olsun*/
+}
+
+#container {
+    width: 928px;
+    padding: 12px 16px; /*yukarı aşağı 13 sağa sola 16 px*/
+    position: relative;
+    margin: auto; /*position relative ve margin auto ile nesneyi sayfaya yatayda ortaladık*/
+    margin-top: 13px;
+    box-shadow: 0 0 10px #1c3564; /*nesne gölgelendirilmesi*/
+    border-radius: 0 26px; /*kenarlık yumuşatması*/
+    background: white;
+}
+/* *** header *** */
+header {
+    width: 928px;
+    height: 120px;
+    position: realtive;
+  
+}
+
+/* logo*/
+#logo {
+    width: 468px;
+    height: 120px;
+    position: relative;
+    float: left; /*position relative float left kombinasyonuyla logo divini sola yasladım*/
+    background: url(/Content/img/leaf-solutions-logo.png); /*arka plan görseli*/
+    transition: opacity .3s ease-in-out;/*logonun üzerine gelince şeffaflığı için geçiş efekti*/
+    cursor: pointer;
+}
+
+    #logo:hover {
+        opacity: .8;/*logonun üzerine gelince şeffaflığı %20 oranında azalır*/
+    }
+    /*socila media*/
+
+    #social-media{ height: 48px;
+                   position: absolute;
+                   top:0;
+                   right:0;/*absolute top right 0 ile sağ üste sabitledik*/
+    }
+    .social{
+        width:48px;
+        height:49px;
+        position relative;
+        float:right;
+        margin-left:10px;
+        background-color:skyblue;
+        transition:all .3s ease-in-out;
+        cursor:pointer;
+    }
+    .social:hover{
+        border-radius: 0 26px;
+        box-shadow: 0 0 4 px #0d6636;
+
+    }
+    .facebook{
+        background:url(/Content/img/facebook.png);
+    }
+        .twitter{
+        background:url(/Content/img/twitter.png);
+    }    .youtube{
+        background:url(/Content/img/youtube.png);
+    }    .share{
+        background:url(/Content/img/share.png);
+    }    .rss{
+        background:url(/Content/img/rss.png);
+    }
+
+         /*search engine*/
+         #search{
+             width:270px;
+             padding:5px;
+             height:30px;
+             position:absolute;
+             right:0;
+             bottom:10px; /*posiiton absolute ve right 0 bottom 10 px ile sağ alta sabitledik nesneyi*/
+             background-color:white;
+             border-radius:0 12px;
+             box-shadow; 0 0 4px #1c3564;
+         }
+         #search-area{
+             width:205px;
+             height:30px;
+             line-height:30px;text-indent:8px;
+             position: relative;
+             float:left; /*realive ve float left ile nesneyi #search div in içinde sola yasladık*/
+             border-radius:0 8px;
+             box-shadow: 0 0 2px #1c3564 inset;
+             background-color:#f4f4f4;
+
+         }
+         .search-text{
+             width:194px;
+             height:22px;
+             border:0;
+             outline: none;
+             background-color:transparent;
+             outline:none;/*tıklandığı zaman sarı çerçeveyi gizlemek için*/
+         }
+         .search-button{
+             width:60px;
+             height:30px;
+             line-height:30px;/*metin dikeyde ortalansın*/ 
+             text-align:center;
+             position:relative;
+             float:left;
+             margin-left:5px;
+             border-radius: 0 8px;
+             background-color:#0d6636;
+             color:white;
+             box-shadow:0 0 2px #1c3564 inset;
+             transition: all .2s ease-in-out;
+             cursor:pointer;
+             outline:none;
+             
+         }
+         .search-button:hover{
+             box-shadow:0 0 10px 4px #1c3564 inset;
+             text-shadow: 0 0 2px yellow;
+             border-radius: 0 12px;
+                          
+         }
+         .search-button input[type="submit"]{
+             background:transparent;
+             border: none;
+             color:white;
+
+         }
